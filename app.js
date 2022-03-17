@@ -21,7 +21,7 @@ let goblins = [
 // set event listeners
 // new goblin form
 form.addEventListener('submit', (e) => {
-    e.preventDefault;
+    e.preventDefault();
 
     const data = new FormData(form);
 
