@@ -15,7 +15,7 @@ export function renderGoblin(goblinData) {
     emojiEl.id = `enemy-face-${goblinData.id}`;
 
     //if enemy hp is above 0, show enemy with emoji. IF NOT show 'dead' emoji
-    emojiEl.textContent = enemyData.hp > 0 ? '👹' : '☠️';
+    emojiEl.textContent = goblinData.hp > 0 ? '👹' : '☠️';
 
     //if enemy hp is below 0, make enemyEl 'dead'
     if (goblinData.hp < 0) {
