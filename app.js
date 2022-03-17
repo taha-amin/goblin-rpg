@@ -85,13 +85,13 @@ function displayGoblins() {
 
   //for loop to go through enemies
     for (let goblin of goblins) {
-        const enemyEl = renderGoblin(goblin);
+        const goblinEl = renderGoblin(goblin);
 
-        enemyEl.addEventListener('click', () => {
+        goblinEl.addEventListener('click', () => {
             goblinClickHandler(goblin);
         });
 
-        goblinListEl.append(enemyEl);
+        goblinListEl.append(goblinEl);
     }
 }
 
