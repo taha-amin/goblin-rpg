@@ -9,9 +9,9 @@ const enemyListEl = document.querySelector('.enemies');
 let playerHP = 10;
 let enemiesDefeatedCount = 0;
 let enemies = [
-  { id: 1, name: 'Wretched Ogre', hp: 3 },
-  { id: 2, name: 'Foul Mutant', hp: 2 },
-  { id: 3, name: 'Rotting Behemoth', hp: 6},
+    { id: 1, name: 'Wretched Ogre', hp: 3 },
+    { id: 2, name: 'Foul Mutant', hp: 2 },
+    { id: 3, name: 'Rotting Behemoth', hp: 6 },
 ];
 let currentId = 3;
 
