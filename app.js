@@ -1,4 +1,7 @@
 // import functions and grab DOM elements
+
+import { renderEnemy } from "./render-utils.js";
+
 const defeatedNumberEl = document.querySelector('#defeated-number');
 const playerHPel = document.querySelector('#player-health');
 const playerImgEl = document.querySelector('#player-img');
