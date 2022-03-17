@@ -65,7 +65,7 @@ function goblinClickHandler(goblinData) {
 
     if (playerHP === 0) {
         playerImgEl.classList.add('game-over');
-        alert('ITS GAME OVER MAN!!!');
+        alert('YOUVE BEEN BANISHED TO THE SHADOW REALM!!!');
     }
 
   //update dom with new enemy, player, and defeated enemy state
