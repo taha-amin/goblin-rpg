@@ -89,3 +89,16 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.player img {
+    width: 250px;
+}
+
+.enemy-stats {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
