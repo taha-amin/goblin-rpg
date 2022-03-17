@@ -19,6 +19,28 @@
         </div>
     </header>
     <main>
+        <div class="player-stats">
+            <div class="goblins-defeated">
+                <p>You have defeated <span id="defeated-number">0</span> enemies</p>
+                <div class="defeated-list"></div>
+            </div>
+            <div class="player">
+                <p>
+                    Your Health:
+                    <span id="player-health">10</span>
+                </p>
+                <img id="player-img" src="./assets/warrior.png" alt="player-warrior" />
+            </div>
+        </div>
+        <div class="enemy-state">
+            <div>
+                <form>
+                    <input name="enemy-name" />
+                    <button>Challenge enemy</button>
+                </form>
+                <div class="enemies"></div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
