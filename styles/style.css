@@ -95,6 +95,6 @@ footer {
 }
 
 .goblin-stats {
-    /* cursor: url(/assets/sword.cur), crosshair; */
-    cursor: crosshair;
+    cursor: url(/assets/sword-removebg.cur), crosshair;
+    /* cursor: crosshair; */
 }
