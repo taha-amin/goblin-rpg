@@ -47,6 +47,7 @@ function goblinClickHandler(goblinData) {
     if (Math.random() < 0.33) {
         goblinData.hp--;
         alert('You hit ' + goblinData.name);
+        displayGoblins();
     } else {
         alert('You tried to hit ' + goblinData.name + ' but you missed');
     }
@@ -76,7 +77,9 @@ function goblinClickHandler(goblinData) {
     hpEl.textContent = goblinData.hp < 0 ? 0 : goblinData.hp;
 
     const faceEl = document.getElementById(`enemy-face-${goblinData.id}`);
-    faceEl.textContent = goblinData.hp > 0 ? '👹' : '☠️';
+    faceEl.textContent = goblinData.hp > 0 ? '👹' : '🔥';
+
+    displayGoblins();
 }
 
 function displayGoblins() {
@@ -87,10 +90,12 @@ function displayGoblins() {
     for (let goblin of goblins) {
         const goblinEl = renderGoblin(goblin);
 
-        goblinEl.addEventListener('click', () => {
-            goblinClickHandler(goblin);
-        });
-
+        if (goblin.hp > 0 && playerHP > 0) {
+            goblinEl.addEventListener('click', () => {
+                goblinClickHandler(goblin);
+            });
+        }
+    
         goblinListEl.append(goblinEl);
     }
 }
