@@ -77,7 +77,7 @@ function goblinClickHandler(goblinData) {
     hpEl.textContent = goblinData.hp < 0 ? 0 : goblinData.hp;
 
     const faceEl = document.getElementById(`enemy-face-${goblinData.id}`);
-    faceEl.textContent = goblinData.hp > 0 ? '👹' : '🔥';
+    faceEl.textContent = goblinData.hp > 0 ? '👹' : '☠️';
 
     displayGoblins();
 }
